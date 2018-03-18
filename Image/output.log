@@ -1,0 +1,300 @@
+2018-03-17 21:14:43,465 WARNING: Server started at 2018-03-17 21:14:43 [in image.py:42]
+2018-03-17 21:14:43,598 WARNING: Server started at 2018-03-17 21:14:43 [in image.py:42]
+2018-03-17 21:14:48,075 DEBUG: Server stoped at 2018-03-17 21:14:48 [in image.py:44]
+2018-03-17 21:14:48,085 DEBUG: Server stoped at 2018-03-17 21:14:48 [in image.py:44]
+2018-03-17 21:15:07,988 WARNING: Server started at 2018-03-17 21:15:07 [in image.py:42]
+2018-03-17 21:15:08,088 WARNING: Server started at 2018-03-17 21:15:08 [in image.py:42]
+2018-03-17 21:16:54,050 DEBUG: Server stoped at 2018-03-17 21:16:54 [in image.py:44]
+2018-03-17 21:16:54,053 DEBUG: Server stoped at 2018-03-17 21:16:54 [in image.py:44]
+2018-03-17 21:18:24,979 WARNING: Server started at 2018-03-17 21:18:24 [in image.py:46]
+2018-03-17 21:18:25,078 WARNING: Server started at 2018-03-17 21:18:25 [in image.py:46]
+2018-03-17 21:20:36,239 DEBUG: Server stoped at 2018-03-17 21:20:36 [in image.py:48]
+2018-03-17 21:20:36,239 DEBUG: Server stoped at 2018-03-17 21:20:36 [in image.py:48]
+2018-03-17 21:21:07,517 WARNING: Server started at 2018-03-17 21:21:07 [in image.py:46]
+2018-03-17 22:24:45,742 WARNING: Server started at 2018-03-17 22:24:45 [in image.py:61]
+2018-03-17 22:24:45,869 WARNING: Server started at 2018-03-17 22:24:45 [in image.py:61]
+2018-03-17 22:26:28,699 DEBUG: Server stoped at 2018-03-17 22:26:28 [in image.py:63]
+2018-03-17 22:26:28,709 DEBUG: Server stoped at 2018-03-17 22:26:28 [in image.py:63]
+2018-03-17 22:26:58,263 WARNING: Server started at 2018-03-17 22:26:58 [in image.py:61]
+2018-03-17 22:29:37,131 WARNING: Server started at 2018-03-17 22:29:37 [in image.py:63]
+2018-03-17 22:30:47,448 WARNING: Server started at 2018-03-17 22:30:47 [in image.py:63]
+2018-03-17 22:30:51,165 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "image.py", line 14, in form2
+    res = processRequest(req)
+  File "image.py", line 28, in processRequest
+    intentName=req.get("result").get("metadata").get("intentName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:49:29,423 WARNING: Server started at 2018-03-17 22:49:29 [in ImageWebhook.py:60]
+2018-03-17 22:49:35,503 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 18, in Image
+    res = makeWebhookResult(res)
+  File "ImageWebhook.py", line 45, in makeWebhookResult
+    "fulfillmentText": string,
+NameError: global name 'string' is not defined
+2018-03-17 22:50:31,545 WARNING: Server started at 2018-03-17 22:50:31 [in ImageWebhook.py:60]
+2018-03-17 22:50:50,480 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 14, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 28, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:52:25,574 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 14, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 28, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:53:23,076 WARNING: Server started at 2018-03-17 22:53:23 [in ImageWebhook.py:60]
+2018-03-17 22:54:27,265 WARNING: Server started at 2018-03-17 22:54:27 [in ImageWebhook.py:61]
+2018-03-17 22:55:16,177 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 29, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:56:43,366 WARNING: Server started at 2018-03-17 22:56:43 [in ImageWebhook.py:63]
+2018-03-17 22:57:00,658 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 31, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:59:30,731 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 31, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 22:59:57,892 WARNING: Server started at 2018-03-17 22:59:57 [in ImageWebhook.py:63]
+2018-03-17 23:00:10,217 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 31, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 23:01:37,436 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 31, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 23:01:57,929 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 31, in processRequest
+    intentName=req.get("queryResult").get("intent").get("displayName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 23:13:20,197 WARNING: Server started at 2018-03-17 23:13:20 [in ImageWebhook.py:76]
+2018-03-17 23:13:38,919 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 14, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 28, in processRequest
+    if(req.get("queryResult").get("intent").get("displayName")==None):
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 23:17:00,512 WARNING: Server started at 2018-03-17 23:17:00 [in ImageWebhook.py:76]
+2018-03-17 23:17:04,771 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 14, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 29, in processRequest
+    intentName=req.get("result").get("metadata").get("intentName")
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-17 23:18:12,942 WARNING: Server started at 2018-03-17 23:18:12 [in ImageWebhook.py:76]
+2018-03-18 00:03:46,812 WARNING: Server started at 2018-03-18 00:03:46 [in ImageWebhook.py:77]
+2018-03-18 00:09:11,847 WARNING: Server started at 2018-03-18 00:09:11 [in ImageWebhook.py:77]
+2018-03-18 00:20:50,444 WARNING: Server started at 2018-03-18 00:20:50 [in ImageWebhook.py:77]
+2018-03-18 00:21:02,406 WARNING: Server started at 2018-03-18 00:21:02 [in ImageWebhook.py:77]
+2018-03-18 00:26:14,629 WARNING: Server started at 2018-03-18 00:26:14 [in ImageWebhook.py:77]
+2018-03-18 00:35:14,916 WARNING: Server started at 2018-03-18 00:35:14 [in ImageWebhook.py:80]
+2018-03-18 00:50:06,933 WARNING: Server started at 2018-03-18 00:50:06 [in ImageWebhook.py:84]
+2018-03-18 00:50:30,544 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 33, in processRequest
+    if(ImageData["type"]=="image"):
+NameError: global name 'ImageData' is not defined
+2018-03-18 00:51:22,348 WARNING: Server started at 2018-03-18 00:51:22 [in ImageWebhook.py:84]
+2018-03-18 00:54:50,485 WARNING: Server started at 2018-03-18 00:54:50 [in ImageWebhook.py:84]
+2018-03-18 01:24:26,689 WARNING: Server started at 2018-03-18 01:24:26 [in ImageWebhook.py:115]
+2018-03-18 01:29:20,480 WARNING: Server started at 2018-03-18 01:29:20 [in ImageWebhook.py:117]
+2018-03-18 01:29:50,194 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 25, in processRequest
+    if(req.get("result").get("resolvedQuery").startswith("FACEBOOK_MEDIA")):
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-18 01:31:02,866 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 15, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 25, in processRequest
+    if(req.get("result").get("resolvedQuery").startswith("FACEBOOK_MEDIA")):
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-03-18 01:34:54,434 WARNING: Server started at 2018-03-18 01:34:54 [in ImageWebhook.py:118]
+2018-03-18 01:35:36,018 WARNING: Server started at 2018-03-18 01:35:36 [in ImageWebhook.py:118]
+2018-03-18 01:35:47,754 WARNING: Server started at 2018-03-18 01:35:47 [in ImageWebhook.py:118]
+2018-03-18 01:38:09,052 WARNING: Server started at 2018-03-18 01:38:09 [in ImageWebhook.py:118]
+2018-03-18 01:54:30,916 WARNING: Server started at 2018-03-18 01:54:30 [in ImageWebhook.py:118]
