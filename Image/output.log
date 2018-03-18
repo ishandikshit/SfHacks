@@ -298,3 +298,61 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2018-03-18 01:35:47,754 WARNING: Server started at 2018-03-18 01:35:47 [in ImageWebhook.py:118]
 2018-03-18 01:38:09,052 WARNING: Server started at 2018-03-18 01:38:09 [in ImageWebhook.py:118]
 2018-03-18 01:54:30,916 WARNING: Server started at 2018-03-18 01:54:30 [in ImageWebhook.py:118]
+2018-03-18 03:17:30,976 WARNING: Server started at 2018-03-18 03:17:30 [in ImageWebhook.py:286]
+2018-03-18 03:19:24,862 WARNING: Server started at 2018-03-18 03:19:24 [in ImageWebhook.py:287]
+2018-03-18 03:22:02,096 WARNING: Server started at 2018-03-18 03:22:02 [in ImageWebhook.py:288]
+2018-03-18 03:22:06,480 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 198, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 208, in processRequest
+    if(req.has_key("result")):
+AttributeError: 'NoneType' object has no attribute 'has_key'
+2018-03-18 03:23:08,624 WARNING: Server started at 2018-03-18 03:23:08 [in ImageWebhook.py:288]
+2018-03-18 03:23:38,370 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 198, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 208, in processRequest
+    if(req.has_key("result")):
+AttributeError: 'NoneType' object has no attribute 'has_key'
+2018-03-18 03:30:45,425 WARNING: Server started at 2018-03-18 03:30:45 [in ImageWebhook.py:118]
+2018-03-18 03:35:26,657 WARNING: Server started at 2018-03-18 03:35:26 [in ImageWebhook.py:117]
+2018-03-18 03:40:12,271 WARNING: Server started at 2018-03-18 03:40:12 [in ImageWebhook.py:115]
+2018-03-18 03:40:17,241 ERROR: Exception on /webhook [POST] [in /usr/local/lib/python2.7/dist-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "ImageWebhook.py", line 25, in Image
+    res = processRequest(req)
+  File "ImageWebhook.py", line 46, in processRequest
+    return temperary[0]
+KeyError: 0

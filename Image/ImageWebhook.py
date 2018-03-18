@@ -5,6 +5,16 @@ import logging
 from logging import Formatter, FileHandler
 from time import gmtime, strftime
 
+
+
+temperary={}
+
+
+temperary={"messaages": [{"subtitle": "Card Subtitle", "title": "Recommendation 1", "imageUrl": "https://slimages.macys.com/is/image/MCY/products/0/optimized/3442430_fpx.tif?bgc=255,255,255&wid=164&qlt=90&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg", "buttons": [{"text": "Lauren Ralph Lauren Lace Sheath Dress", "postback": "http://www1.macys.com/shop/product/lauren-ralph-lauren-lace-sheath-dress?ID=1968356"}], "platform": "facebook", "type": 1}]}
+
+
+
+
 app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def Image():
@@ -29,8 +39,12 @@ def processRequest(req):
                 print(attach)
                 imageData=attach[0]
                 if(imageData["type"]=="image"):
-                    return imageData["payload"]["url"] 
-    
+                    #return imageData["payload"]["url"]
+                    #JsonReply=Process(url)
+                    print("########################################")
+                    print(temperary)
+                    return temperary[0]
+        
     if(req.has_key("queryResult")):
         intentName=req.get("queryResult").get("intent").get("displayName")
     else:
@@ -39,7 +53,7 @@ def processRequest(req):
 
 
     if ( intentName == 'Facebook'):
-        return facebookResult()
+        return temperary[0]
 
     res=intent(intentName,req)
     if(req.has_key("queryResult")):
@@ -66,23 +80,6 @@ def DefaultResponse(req):
 
 def facebookResult():
     return{
-    "messages": 
-    [
-              {
-                "buttons": 
-                [
-                    {
-                        "postback": "https://www.macys.com/shop/product/jessica-howard-lasercut-bell-sleeve-dress-regular-petite-sizes?ID=5730174&CategoryID=170144",
-                        "text": "Planet Gold Juniors Dress, Short Sleeve Space-Dye A-Line"
-                    }
-                ],
-                "imageUrl": "http://slimages.macys.com/is/image/MCY/products/0/optimized/1564570_fpx.tif?bgc=255,255,255&amp;wid=100&amp;qlt=90&amp;layer=comp&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.7,1.0,0.5,0&amp;fmt=jpeg",
-                "platform": "facebook",
-                "subtitle": "",
-                 "title": "Recommendation 1",
-                 "type": 1
-              }
-    ]
     }
 
 def makeWebhookResultV2(speech,fullfillment="",flag=1):
@@ -118,3 +115,7 @@ if __name__ == '__main__':
     app.logger.warning('Server started at '+strftime("%Y-%m-%d %H:%M:%S", gmtime()) )
     app.run(host='0.0.0.0', port=80,debug=False)
     app.logger.debug('Server stoped at '+strftime("%Y-%m-%d %H:%M:%S", gmtime()) )
+
+
+
+
